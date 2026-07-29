@@ -961,12 +961,12 @@
   // - 이미지(imgs): IndexedDB에 저장 (수백 MB ~ 수 GB 가능)
   // - 메타데이터(이름/가격 등): localStorage에 저장 (빠른 로드)
   // 페이지 새로고침해도 상품이 사라지지 않게 브라우저에 자동 저장합니다.
-  const STORAGE_KEY = 'mimosa_brandProducts_v1';
+  const STORAGE_KEY = 'mimosa_brandProducts_v2_fresh';
   // ⭐ 데이터 버전: HTML의 brandProducts가 바뀔 때마다 이 값을 올리세요.
   //    (예: 신규 상품 추가, 가격 수정 등) 저장된 버전과 다르면 자동으로 신규 상품을 병합합니다.
-  const DATA_VERSION = 'V15-KO-BRAND-ALL'; // 브랜드 키 전체 한글화 (CHROME HEARTS→크롬하츠 등)
-  const VERSION_KEY = 'mimosa_dataVersion';
-  const IDB_NAME = 'mimosa_db';
+  const DATA_VERSION = 'V1-FRESH-START'; // 완전히 새 페이지 — 기존 등록 상품 데이터와 분리
+  const VERSION_KEY = 'mimosa_dataVersion_v2_fresh';
+  const IDB_NAME = 'mimosa_db_v2_fresh';
   const IDB_STORE = 'product_images';
   const IDB_VERSION = 1;
   let _idbReady = null;
